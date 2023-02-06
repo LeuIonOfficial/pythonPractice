@@ -88,5 +88,16 @@ def get_geometric_mean():
     return geometric_mean
 
 
+def sum_of_digits():
+    number = list(input())
+    sum = 0
+    loop = len(number)
+    print(loop)
+    while loop > 0:
+        for i in number:
+            i = int(i)
+            sum += i 
+        return sum 
+
 if __name__ == "__main__":
-    print(get_reversed_integer())
+    print(sum_of_digits())
