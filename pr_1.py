@@ -92,12 +92,33 @@ def sum_of_digits():
     number = list(input())
     sum = 0
     loop = len(number)
-    print(loop)
     while loop > 0:
         for i in number:
             i = int(i)
-            sum += i 
-        return sum 
+            sum += i
+        return sum
+
+
+def multiples_3_range_10_50():
+    for i in range(10, 51):
+        if i % 3 == 0:
+            print(i)
+
+
+def sum_of_digits(n):
+    s = 0
+    while n:
+        s += n % 10
+        n //= 10
+        return s
+
+def condition():
+    for i in range(100, 201):
+        if sum_of_digits(i) % 2 == 0:
+            print(i)
+
+
+
 
 if __name__ == "__main__":
-    print(sum_of_digits())
+    sum_of_digits_is_even()
