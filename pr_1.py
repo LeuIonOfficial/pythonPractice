@@ -112,13 +112,12 @@ def sum_of_digits(n):
         n //= 10
         return s
 
+
 def condition():
     for i in range(100, 201):
         if sum_of_digits(i) % 2 == 0:
             print(i)
 
 
-
-
 if __name__ == "__main__":
-    sum_of_digits_is_even()
+
