@@ -1,11 +1,10 @@
-def get_area_of_triangle(a: int, b: int, c: int):
-    s = (a + b + c) / 2
-    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
-    return f'Circle area {float(area):.2f} with parameters {a,b,c}'
+def get_average_of_set_of_int(set_of_int):
+    sum = 0
+    for el in range(len(set_of_int)):
+        sum += el
+    return sum / len(set_of_int)
 
 
-if __name__ == "__main__":
-    a = int(input('a: '))
-    b = int(input('b: '))
-    c = int(input('c: '))
-    print(get_area_of_triangle(a,b,c))
+a = [4, 5, 6, 7, 2, 1, 4, 5]
+
+print(get_average_of_set_of_int(a))
