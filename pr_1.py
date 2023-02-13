@@ -1,7 +1,7 @@
 
 # (30°C x 1.8) + 32 = 86°F
 def centigrade_to_fahrenheit():
-    centigrade = float(input("Centigrade's: "))
+    centigrade = float(input("Centigrade: "))
     fahrenheit = (centigrade * 1.8) + 32
     return f'{float(fahrenheit):.2f} Fahrenheit'
 
