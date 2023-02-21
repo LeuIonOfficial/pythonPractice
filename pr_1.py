@@ -6,7 +6,7 @@ result_matrix = []
 for i in range(len(matrix1)):
     row = []
     for el in range(len(matrix1[i])):
-        result = matrix1[i][el] + matrix2[i][el]
+        result = matrix1[i][el] * matrix2[i][el]
         row.append(result)
     result_matrix.append(row)
 
