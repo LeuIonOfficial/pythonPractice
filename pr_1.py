@@ -1,12 +1,14 @@
-x = int(input('Nth term: '))
+my_dict = {
+    1: 1,
+    2: 2,
+    3: 3,
+    'home': 'car'
+}
 
-num1, num2 = 0, 1
 
-list_of_fibonacci_numbers = [num1, num2]
+def print_all_items_from_dict(dict):
+    for k, v in dict.items():
+        print(k, v)
 
-for i in range(x - 1):
-    result = num1 + num2
-    num1, num2 = num2, result
-    list_of_fibonacci_numbers.append(result)
 
-print(list_of_fibonacci_numbers[-1])
+print_all_items_from_dict(my_dict)
