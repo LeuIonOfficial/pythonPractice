@@ -1,9 +1,16 @@
-def fibonacci_series(x):
-    num1, num2 = 0, 1
-    for i in range(x):
-        print(num1)
-        num1, num2 = num2, num1 + num2
+def leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0 and year % 400 != 0:
+            return False
+        else:
+            return True
+    else:
+        return False
 
 
-x = int(input("How many iterations: "))
-fibonacci_series(x)
+year = 2024
+
+if leap_year(year):
+    print(year, 'is a leap year')
+else:
+    print(year, 'isnt a leap year')
