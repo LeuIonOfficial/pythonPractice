@@ -1,14 +1,9 @@
-my_dict = {
-    1: 1,
-    2: 2,
-    3: 3,
-    'home': 'car'
-}
+def fibonacci_series(x):
+    num1, num2 = 0, 1
+    for i in range(x):
+        print(num1)
+        num1, num2 = num2, num1 + num2
 
 
-def print_all_items_from_dict(dict):
-    for k, v in dict.items():
-        print(k, v)
-
-
-print_all_items_from_dict(my_dict)
+x = int(input("How many iterations: "))
+fibonacci_series(x)
