@@ -1,9 +1,5 @@
-def palindrome_check():
-    word = input('word: ')
-    if word[0] == word[-1]:
-        print("Palindrome")
-    else:
-        print("Not palindrome")
+my_list = [2, 5, 6, 7, 8, 9, 3, 42, 1, 5]
 
+del my_list[1]
 
-palindrome_check()
+print(my_list)
