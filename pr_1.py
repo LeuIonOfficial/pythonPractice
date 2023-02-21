@@ -1,6 +1,6 @@
+my_list = input("numbers: ").split(',')
+result = 0
+for el in my_list:
+    result += int(el)
+print(result)
 
-my_array = [1, 1, 1, 4, 5]
-
-for el in my_array:
-    if el % 2 == 0:
-        print(el)
