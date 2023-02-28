@@ -9,5 +9,5 @@ def sum_of_digits(number):
 
 
 if __name__ == '__main__':
-    nr = list(input('numbers: ').split())
+    nr = list(input('numbers: '))
     print(sum_of_digits(nr))
