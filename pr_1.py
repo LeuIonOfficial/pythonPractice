@@ -7,9 +7,13 @@ def check_prime(nr):
     return True
 
 
+def generate_prime_numbers(b):
+    list_of_nr = []
+    for i in range(1, b + 1):
+        if check_prime(i):
+            list_of_nr.append(i)
+    return list_of_nr
+
+
 if __name__ == '__main__':
-    number = int(input("Number you want to check: "))
-    if check_prime(number):
-        print(f'{number} is a prime number')
-    else:
-        print(f'{number} is not a prime number')
+    print(generate_prime_numbers(19))
